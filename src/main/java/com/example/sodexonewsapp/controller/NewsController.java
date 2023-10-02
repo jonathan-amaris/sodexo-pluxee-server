@@ -72,7 +72,7 @@ public class NewsController {
     }
 
     @DeleteMapping("/favorites/{id}")
-    public ResponseEntity<HttpStatus> removeNewsToFavorite(@PathVariable Long id){
+    public ResponseEntity<HttpStatus> removeNewsToFavorite(@PathVariable Integer id){
         try {
             newsRepository.deleteById(id);
             return new ResponseEntity<>(HttpStatus.OK);

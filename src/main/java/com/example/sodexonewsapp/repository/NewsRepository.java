@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface NewsRepository extends JpaRepository<News, Long> {
+public interface NewsRepository extends JpaRepository<News, Integer> {
     @Query(value = "SELECT * FROM News AS n ORDER BY n.added_to_favorites_at ASC LIMIT 10 OFFSET ?1", nativeQuery = true)
     List<News> getAllNewsAsc(Integer offset);
 

@@ -14,7 +14,7 @@ import org.hibernate.annotations.CreationTimestamp;
 @ToString
 public class News {
     @Id
-    private Long id;
+    private Integer id;
 
     private String title;
 
