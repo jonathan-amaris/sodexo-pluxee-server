@@ -24,6 +24,11 @@ Abre la clase SodexoNewsAppApplication.java en IntelliJ IDEA.
 Haz clic derecho en la clase y selecciona "Run" (Ejecutar) para ejecutar la aplicación.
 ¡Eso es todo! La aplicación debería ejecutarse y estar lista para su uso.
 
+1. Puedes acceder desde tu navegador (ej: Google Chrome) o Postman usando la url `http://localhost:9090/api/v1/news/favorites`.
+2. Puedes acceder a la base de datos en memoria H2 usando el siguiente url `http://localhost:9090/h2-ui/login.jsp`.
+
+Nota: Para acceder a H2, debes colocar `Driver class: org.h2.Driver`, `JDBC URL: jdbc:h2:mem:testdb`, `User Name: sa` y password debe estar vacio.
+
 ## Problemas y Soporte
 
 Si encuentras problemas o tienes preguntas, no dudes en escribirme `jonathan.araujo@amaris.com`.
